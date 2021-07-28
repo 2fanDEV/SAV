@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link href="styles.css" rel="stylesheet" type="text/css" />
+
+		<title>Hyakou</title>
+	</head>
+	<body>
+
+		<div class="container">
+			<button onclick="init()" id="BubbleSort" class="btn">BubbleSort</button>
+			<button id="rsSort" onclick="initRadix(NSArray, ctxNS)" class="btn">
+				RadixSort
+			</button>
+			<button id="bogosort" onclick="initBogo(BogoArray, ctxBogo)" class="btn">
+				BogoSort </button>
+			<button onclick="initHeap(heapArray, ctxHeap)" id="heapSort" class="btn">
+				HeapSort
+			</button>
+			<button onclick="initFlash(flashArray, ctxFlash)" id="flashsort" class="btn">
+				FlashSort
+			</button>
+			<button
+				onclick="initInsert(InsertArray, ctxInsert)"
+				id="InsertSort"
+				class="btn">
+				InsertionSort
+			</button>
+			<button
+				id="selectionsort"
+				onclick="initSelectionSort(SelectSortArray, ctxSelectionSort)"
+				class="btn">
+				SelectionSort
+			</button>
+			<button
+				onclick="initCS(countingArray, ctxCountingSort)"
+				class="btn"
+				id="CSbtn">
+				CountingSort
+			</button>
+			<button
+				onclick="initStalinSort(stalinArray, ctxStalSort)"
+				class="btn"
+				id="stalinsortbtn">
+				StalinSort
+			</button>
+			<button
+				id="runall"
+				onclick="initHeap(heapArray,
+				ctxHeap);initFlash(flashArray,ctxFlash);initInsert(InsertArray,
+				ctxInsert);initBogo(BogoArray,ctxBogo);initRadix(NSArray,
+				ctxNS);init();initSelectionSort(SelectSortArray,
+				ctxSelectionSort);initCS(countingArray,
+				ctxCountingSort);initStalinSort(stalinArray, ctxStalSort)"
+				class="btn">
+				Run All
+			</button>
+			<button onclick="ShuffleAll()" class="btn" id="shuffle">Shuffle All</button>
+			<canvas id="canvas" width="636" height="309" class="cssCanv"></canvas>
+			<canvas id="canvas2" width="636" height="309" class="cssCanv"></canvas>
+			<canvas id="canvas3" width="636" height="309" class="cssCanv"></canvas>
+			<canvas id="canvas4" width="636" height="309" class="cssCanv"></canvas>
+			<canvas id="canvas5" width="636" height="309" class="cssCanv"></canvas>
+			<canvas id="canvas6" width="636" height="309" class="cssCanv"></canvas>
+			<canvas id="canvas7" width="636" height="309" class="cssCanv"></canvas>
+			<canvas id="canvas8" width="636" height="309" class="cssCanv"></canvas>
+			<canvas id="canvas9" width="636" height="309" class="cssCanv"></canvas>
+		</div>
+
+		<script src="app.js"></script>
+	</body>
+</html>
